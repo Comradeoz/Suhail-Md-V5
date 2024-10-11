@@ -1,4 +1,4 @@
-const { bot, removeBg } = require('../lib')
+const { bot,smd, removeBg } = require('../lib')
 const config = require('../config')
 smd(
 	{
