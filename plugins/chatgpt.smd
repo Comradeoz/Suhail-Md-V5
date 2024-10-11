@@ -1,7 +1,7 @@
 const config = require('../config')
 const { bot, getGPTResponse, getDallEResponse } = require('../lib')
 
-bot(
+smd(
 	{
 		pattern: 'gpt ?(.*)',
 		fromMe: true,
@@ -22,7 +22,7 @@ bot(
 	}
 )
 
-bot(
+smd(
 	{
 		pattern: 'dall ?(.*)',
 		fromMe: true,
