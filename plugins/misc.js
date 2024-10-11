@@ -1,9 +1,9 @@
 const {
-  bot,
+  smd,
   // genButtonMessage,
   setVar,
 } = require('../lib/')
-bot(
+smd(
   {
     pattern: 'status ?(.*)',
     desc: 'Auto Status view',
@@ -39,7 +39,7 @@ bot(
   }
 )
 
-bot(
+smd(
   {
     pattern: 'call ?(.*)',
     desc: 'Auto reject call Manager',
@@ -75,7 +75,7 @@ bot(
   }
 )
 
-bot(
+smd(
   {
     pattern: 'read ?(.*)',
     desc: 'Auto read Message',
@@ -111,7 +111,7 @@ bot(
   }
 )
 
-bot(
+smd(
   {
     pattern: 'online ?(.*)',
     desc: 'Always Online',
