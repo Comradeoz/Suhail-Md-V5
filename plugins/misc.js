@@ -87,8 +87,8 @@ bot(
       // const msg = await genButtonMessage(
       // 	[
       // 		{
-      // 			id: `call ${config.REJECT_CALL ? 'off' : 'on'}`,
-      // 			text: config.REJECT_CALL ? 'DISABLE' : 'ENABLE',
+      // 			id: `call ${config.REJECT_CALL ? 'on' : 'off'}`,
+      // 			text: config.REJECT_CALL ? 'ENABLE' : 'DISABLE',
       // 		},
       // 	],
       // 	`Auto Reject Call Manager`,
