@@ -1,4 +1,4 @@
-const { bot, IsSpotify, isUrl, dowloadTrack, getSpotifyPlaylist } = require('../lib/')
+const { bot, IsSpotify, isUrl,smd, dowloadTrack, getSpotifyPlaylist } = require('../lib/')
 
 smd(
   {
