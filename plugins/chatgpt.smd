@@ -1,5 +1,5 @@
 const config = require('../config')
-const { bot, getGPTResponse, getDallEResponse } = require('../lib')
+const { bot,smd, getGPTResponse, getDallEResponse } = require('../lib')
 
 smd(
 	{
