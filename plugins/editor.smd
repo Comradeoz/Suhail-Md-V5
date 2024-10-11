@@ -1,6 +1,6 @@
 const { bot, removeBg } = require('../lib')
 const config = require('../config')
-bot(
+smd(
 	{
 		pattern: 'rmbg',
 		fromMe: true,
