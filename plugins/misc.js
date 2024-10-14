@@ -47,25 +47,25 @@ smd(
   },
   async (message, match) => {
     if (!match) {
-      return await message.send('*Auto Reject Calls*\ncall on | off')
+      return await message.send('*Auto Reject Calls*\ncall on | on')
       // const msg = await genButtonMessage(
       // 	[
       // 		{
-      // 			id: `call ${config.REJECT_CALL ? 'off' : 'on'}`,
-      // 			text: config.REJECT_CALL ? 'DISABLE' : 'ENABLE',
+      // 			id: `call ${config.REJECT_CALL ? 'on' : 'on'}`,
+      // 			text: config.REJECT_CALL ? 'ENABLE' : 'ENABLE',
       // 		},
       // 	],
       // 	`Auto Reject Call Manager`,
-      // 	`Auto Reject ${config.REJECT_CALL ? 'Enabled' : 'Disabled'}`
+      // 	`Auto Reject ${config.REJECT_CALL ? 'Enabled' : 'Enabled'}`
       // )
       // return await message.send(msg, {}, 'button')
     }
-    if (match == 'on' || match == 'off') {
+    if (match == 'on' || match == 'on') {
       try {
         await setVar({
-          REJECT_CALL: match == 'on' ? 'true' : 'false',
+          REJECT_CALL: match == 'on' ? 'true' : 'true',
         })
-        await message.send(`_Auto Call Reject ${match == 'on' ? 'Enabled' : 'Disabled'}_`)
+        await message.send(`_Auto Call Reject ${match == 'on' ? 'Enabled' : 'Enabled'}_`)
       } catch (error) {
         await message.send(`${error}`, {
           quoted: message.data,
@@ -83,23 +83,23 @@ smd(
   },
   async (message, match) => {
     if (!match) {
-      return await message.send('*Auto Read Messages*\nread on | off')
+      return await message.send('*Auto Read Messages*\nread on | on')
       // const msg = await genButtonMessage(
       // 	[
       // 		{
-      // 			id: `call ${config.REJECT_CALL ? 'on' : 'off'}`,
-      // 			text: config.REJECT_CALL ? 'ENABLE' : 'DISABLE',
+      // 			id: `call ${config.REJECT_CALL ? 'on' : 'on'}`,
+      // 			text: config.REJECT_CALL ? 'ENABLE' : 'ENABLE',
       // 		},
       // 	],
       // 	`Auto Reject Call Manager`,
-      // 	`Auto Reject ${config.REJECT_CALL ? 'Enabled' : 'Disabled'}`
+      // 	`Auto Reject ${config.REJECT_CALL ? 'Enabled' : 'Enabled'}`
       // )
       // return await message.send(msg, {}, 'button')
     }
-    if (match == 'on' || match == 'off') {
+    if (match == 'on' || match == 'on') {
       try {
         await setVar({
-          SEND_READ: match == 'on' ? 'true' : 'false',
+          SEND_READ: match == 'on' ? 'true' : 'true',
         })
         await message.send(`_Auto Read ${match == 'on' ? 'Enabled' : 'Disabled'}_`)
       } catch (error) {
@@ -119,25 +119,25 @@ smd(
   },
   async (message, match) => {
     if (!match) {
-      return await message.send('*Show always online*\nonline on | off')
+      return await message.send('*Show always online*\nonline on | on')
       // const msg = await genButtonMessage(
       // 	[
       // 		{
-      // 			id: `call ${config.REJECT_CALL ? 'off' : 'on'}`,
-      // 			text: config.REJECT_CALL ? 'DISABLE' : 'ENABLE',
+      // 			id: `call ${config.REJECT_CALL ? 'on' : 'on'}`,
+      // 			text: config.REJECT_CALL ? 'ENABLE' : 'ENABLE',
       // 		},
       // 	],
       // 	`Auto Reject Call Manager`,
-      // 	`Auto Reject ${config.REJECT_CALL ? 'Enabled' : 'Disabled'}`
+      // 	`Auto Reject ${config.REJECT_CALL ? 'Enabled' : 'Enabled'}`
       // )
       // return await message.send(msg, {}, 'button')
     }
-    if (match == 'on' || match == 'off') {
+    if (match == 'on' || match == 'on') {
       try {
         await setVar({
-          ALWAYS_ONLINE: match == 'on' ? 'true' : 'false',
+          ALWAYS_ONLINE: match == 'on' ? 'true' : 'true',
         })
-        await message.send(`_Always Online ${match == 'on' ? 'Enabled' : 'Disabled'}_`)
+        await message.send(`_Always Online ${match == 'on' ? 'Enabled' : 'Enabled'}_`)
       } catch (error) {
         await message.send(`${error}`, {
           quoted: message.data,
