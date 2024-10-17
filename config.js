@@ -138,7 +138,12 @@ fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename
   //MsgsInLog: process.env.MSGS_IN_LOG|| "false", // "true"  to see messages , "log" to open logs , "false" to hide logs messages
   //readcmds:process.env.READ_COMMANDS|| "false", 
   //alwaysonline:process.env.WAPRESENCE|| "unavailable", // 'unavailable' | 'online' | 'composing' | 'recording' | 'paused'
-  //read_status: process.env.AUTO_READ_STATUS || "false",
+  //read_status: process.env.AUTO_READ_STATUS || "true",
   //save_status: process.env.AUTO_SAVE_STATUS || "false",
   //aitts_Voice_Id : process.env.AITTS_ID || "37",
   //ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY  || "",
+//read_message: process.env.AUTO_READ_MESSAGE || "true",
+//reject_call: process.env.AUTO_REJECT_CALL || "true",
+  
+  
+
