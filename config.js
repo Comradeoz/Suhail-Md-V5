@@ -47,9 +47,14 @@ global.waPresence= process.env.WAPRESENCE ||  "null" ; // 'unavailable' | 'avail
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
-global.readcmds = process.env.READ_COMMAND || "false"
-global.readmessage = process.env.READ_MESSAGE || "false"
+global.readcmds = process.env.READ_COMMAND || "true"
+global.readmessage = process.env.READ_MESSAGE || "true"
 global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
+
+
+//========================= [ AUTO REJECT CALL ] =========================\\
+global.rejectcall = process.env.REJECT_CALL || "true"
+global.rejectcallfrom = process.env.REJECT_CALL_FROM || "2348144294226"
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
